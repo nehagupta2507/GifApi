@@ -1,0 +1,17 @@
+body, .jumbotron {
+    background-image: url(../images/bkg.gif);
+    background-size: cover;
+} 
+.navbar {
+    background-color: rgb(6,5,63);
+    color: aliceblue;
+}
+
+#addbuttons{
+    margin: 10px;
+}
+#buttonText > p {
+    color: aliceblue;
+    padding: 10px;
+    justify-content: center
+}
