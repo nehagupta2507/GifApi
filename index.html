@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GifTastic</title>
+    <!-- order of CSS styles whichever gets called LAST will override the previous one -->
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
@@ -15,7 +17,7 @@
 <body>
         <!-- Image and text -->
         <nav class="navbar justify-content-center fixed-top">
-                  <img src="assets/images/giphylogo.gif" width="50" height="50" class="d-inline-block" alt="Gif-Logo">
+                  <img src="assets/images/giphylogo.gif" class="d-inline-block gifLogo" alt="Gif-Logo">
                   Fun with GifTastic!
               </nav>    
         <br>
@@ -28,31 +30,28 @@
                                 placeholder="Add and search fun stuff!" data-name="">
                                 <br>
                                 <div class="d-flex justify-content-center">
-                                <button id="inputButton" type="submit" class="btn btn-info btn-lg justify-content-center">Add anything!</button>
+                                <button id="inputButton" type="submit" class="btn btn btn-outline-dark btn-light btn-block justify-content-center createButton">Add anything you like!</button>
                                 </div>
                           </form>
                         </div>
                         <br>
-                        <div class = "row">
-                                <div class=" cols-md-12 d-flex btn-toolbar" id="buttonText">
+                        <div class="row">
+                                <div class="cols-md-12" id="buttonText">
                                         <p>Click on the buttons!</p>
                                 </div>
-                                <div class="cols-md-12" id="addButtons"> </div>
-                        </div>
-                        <br>
-                        <div class="d-flex justify-content-center">
+                                <div class="cols-md-12" id="addButtons"></div>
+                         </div>
+                         <br>
+                         <div class="d-flex justify-content-center">
                            <button id="clearGif" class="btn btn-light btn-lg">Clear The Gifs!</button>
                         </div>    
                   </div>
                 </div>
-          </div>
                 <div class="row gifBox">
                         <div class="col-12">
                                 <div class='d-flex align-content-stretch flex-wrap main' id="gifImage"></div>
-                                </div>
                         </div>
-                        </div>
-                </div> 
+                </div>
         </div>
         <nav class="navbar justify-content-center fixed-bottom">
                 2019 Copyright &copy; Neha Gupta

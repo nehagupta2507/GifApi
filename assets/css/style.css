@@ -6,12 +6,20 @@ body, .jumbotron {
     background-color: rgb(6,5,63);
     color: aliceblue;
 }
+.gifLogo {
+    width: 50px;
+    height: 50px;
+}
 
 #addbuttons{
     margin: 10px;
 }
+
 #buttonText > p {
     color: aliceblue;
     padding: 10px;
-    justify-content: center
+    justify-content: center;
+}
+.desc{
+color: whitesmoke;
 }
